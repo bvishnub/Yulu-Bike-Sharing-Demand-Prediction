@@ -1,0 +1,27 @@
+# Ignore virtual environments
+env/
+venv/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# Environment & config
+.env
+
+# OS-generated files
+.DS_Store
+
+# Model binaries (optional)
+*.pkl
+*.joblib
+
+# Logs
+*.log
