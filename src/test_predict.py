@@ -21,7 +21,6 @@ sample = pd.DataFrame({
     'Month': [6],
     'Day': [15],
     'Weekday': [4],
-    'Week_of_month': [3],
     'season_Spring': [0],
     'season_Summer': [1],
     'season_Winter': [0]

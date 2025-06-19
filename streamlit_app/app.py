@@ -37,8 +37,7 @@ functioning = st.radio("Is it a Functioning Day?", ("Yes", "No"))
 year = st.selectbox("Year", [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025])
 month = st.slider("Month", 1, 12, 6)
 day = st.slider("Day", 1, 31, 15)
-weekday = st.slider("Weekday (0=Mon, 6=Sun)", 0, 6, 3)
-week_of_month = st.slider("Week of Month", 1, 5, 3)
+weekday = st.slider("Weekday (0=Mon, 6=Sun)", 0, 6, 1)
 
 season = st.radio("Season", ("Spring", "Summer", "Winter"))
 season_spring = 1 if season == "Spring" else 0
@@ -66,7 +65,6 @@ input_df = pd.DataFrame([{
     'Month': month,
     'Day': day,
     'Weekday': weekday,
-    'Week_of_month': week_of_month,
     'season_Spring': season_spring,
     'season_Summer': season_summer,
     'season_Winter': season_winter
