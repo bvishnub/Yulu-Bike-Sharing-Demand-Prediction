@@ -1,27 +1,48 @@
-# Ignore virtual environments
-env/
-venv/
-
-# Byte-compiled / cache files
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*$py.class
+*.pyo
+*.pyd
+*.so
 
-# Jupyter notebook checkpoints
-.ipynb_checkpoints/
+# Virtual environment
+env/
+venv/
+ENV/
+*.env
 
-# VS Code settings
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code and other editor files
 .vscode/
+*.code-workspace
 
-# Environment & config
-.env
-
-# OS-generated files
+# System files
 .DS_Store
-
-# Model binaries (optional)
-*.pkl
-*.joblib
+Thumbs.db
 
 # Logs
 *.log
+
+# Streamlit cache
+.streamlit/
+
+# Model artifacts
+*.pkl
+*.joblib
+
+# Data files
+*.csv
+*.xlsx
+*.json
+
+# Environment files
+requirements.txt.lock
+
+# Pytest
+.pytest_cache/
+
+# dotenv / secrets
+.env
+.env.*
